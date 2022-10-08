@@ -4,13 +4,14 @@ import './index.scss';
 
 function App() {
 
-  const [mes, setMes] = useState(0)
-  const [dia, setDia] = useState(0)
+  const [mes, setMes] = useState("")
+  const [dia, setDia] = useState("")
 
   const [result, setResult] = useState("")
-  
 
-  function clickCalcular (mes, dia) {
+  let x = mes
+  let y = dia
+  function clickCalcular (x, y) {
 
 
     if( mes === "Outubro" && dia === "1"){
@@ -29,10 +30,10 @@ function App() {
       <h1>SIGNO DE LIBRA</h1>
       <div className='inputs'>
         <div>
-        <input type="number" placeholder='Mes' value={mes} onChange={e => setMes(Number(e.target.value))}/>
+        <input type="text" placeholder='Mes' value={mes} onChange={e => setMes(e.target.value)}/>
         </div>
         <div>
-        <input type="number" placeholder='dia' value={dia} onChange={e => setDia(Number(e.target.value))}/>
+        <input type="text" placeholder='dia' value={dia} onChange={e => setDia(e.target.value)}/>
         </div>
         </div>
         <button className='botao' onClick={clickCalcular}>CALCULAR</button>
