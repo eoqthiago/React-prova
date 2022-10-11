@@ -5,8 +5,8 @@ import Libras from "./pages/libras"
 import Home from "./pages/acai/App.js"
 import Sorv from "./pages/sorverte"
 import SalarioLIquido from "./pages/salario-liquio"
-
-
+import Consumo from "./pages/tanque-carro"
+import Termometro from "./pages/temperatura"
 
 
 const Rotas = () => {
@@ -17,6 +17,8 @@ const Rotas = () => {
                 <Route path="/lIbras" exact element={<Libras />} />
                 <Route path="/sorv" exact element={<Sorv />} />
                 <Route path="/salario" exact element={<SalarioLIquido />} />
+                <Route path="/tanque" exact element={<Consumo/>} />
+                <Route path="/temperatura" exact element={<Termometro/>} />
             </Routes>
         
         </BrowserRouter>
