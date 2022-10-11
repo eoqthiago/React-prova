@@ -4,6 +4,7 @@ import React from "react";
 import Libras from "./pages/libras"
 import Home from "./pages/acai/App.js"
 import Sorv from "./pages/sorverte"
+import SalarioLIquido from "./pages/salario-liquio"
 
 
 
@@ -15,6 +16,7 @@ const Rotas = () => {
                 <Route path="/" exact element={<Home />} />
                 <Route path="/lIbras" exact element={<Libras />} />
                 <Route path="/sorv" exact element={<Sorv />} />
+                <Route path="/salario" exact element={<SalarioLIquido />} />
             </Routes>
         
         </BrowserRouter>
