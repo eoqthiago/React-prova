@@ -7,7 +7,7 @@ export default function Index() {
     const [resultado, setResultado] = useState(0);
 
     async function calculoReal() {
-        setResultado(Math.ceil((distancia/consumo)/capacidade));
+        setResultado(Math.ceil(distancia/(capacidade*consumo)));
     }
 
     return (
