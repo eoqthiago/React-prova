@@ -4,7 +4,7 @@ import React from "react";
 import Libras from "./pages/libras"
 import Home from "./pages/acai/App.js"
 import Sorv from "./pages/sorverte"
-import SalarioLIquido from "./pages/salario-liquio"
+import SalarioLIquido from "./pages/salario-liquido"
 import Consumo from "./pages/tanque-carro"
 import Termometro from "./pages/temperatura"
 
