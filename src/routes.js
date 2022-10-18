@@ -7,6 +7,9 @@ import Sorv from "./pages/sorverte"
 import SalarioLIquido from "./pages/salario-liquido"
 import Consumo from "./pages/tanque-carro"
 import Termometro from "./pages/temperatura"
+import NumerosNaturais from "./pages/numerosNaturais"
+import Pattern from "./pages/pattern"
+import PatternToo from "./pages/pattern2"
 
 
 const Rotas = () => {
@@ -19,6 +22,9 @@ const Rotas = () => {
                 <Route path="/salario" exact element={<SalarioLIquido />} />
                 <Route path="/tanque" exact element={<Consumo/>} />
                 <Route path="/temperatura" exact element={<Termometro/>} />
+                <Route path="/numerosNaturais" exact element={<NumerosNaturais/>} />
+                <Route path="/pattern" exact element={<Pattern/>} />
+                <Route path="/pattern2" exact element={<PatternToo/>} />
             </Routes>
         
         </BrowserRouter>
