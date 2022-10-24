@@ -15,4 +15,4 @@ function meuCafe (n, l, d) {
     console.log(output)
 }
 
-meuCafe(15, 3, 200)
+meuCafe(1, 5, 2000)
