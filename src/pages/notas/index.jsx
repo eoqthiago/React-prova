@@ -4,6 +4,8 @@ export default function Index () {
 
     const [alunos, setAlunos] = useState([]);
     const [media, setMedia] = useState(0);
+    const [alta, setAlta] = useState(0);
+    const [baixa, setBaixa] = useState(0);
     const [qtd, setQtd] = useState(0);
 
     function criarArray() {
@@ -18,8 +20,16 @@ export default function Index () {
         console.log(alunos)
     }
 
+    function mediaAlunos() {
+        let mid = 0;
+        for (let i = 0; i < alunos.length; i++) {
+            mid += alunos[i];
+        }
+        setMedia(mid / alunos.length);
+    }
+
     return (
-        <div>
+        <div className='App'>
             <input type='number' value={qtd} onChange={e => setQtd(Number(e.target.value))} />
             <button onClick={criarArray} >Iniciar</button>
 
@@ -32,6 +42,13 @@ export default function Index () {
                     />
                 </div>
             ))}
+
+            <div>
+                <div>Media {media}</div>
+                <div>Nota mais baixa: {baixa} </div>
+                <div>Nota mais alta: {alta} </div>
+                <button onClick={mediaAlunos}>Clique</button>
+            </div>
         </div>
     );
 }
