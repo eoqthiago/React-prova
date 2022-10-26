@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './index.scss';
 
-function App() {
+export default function App() {
 
   const [mes, setMes] = useState("")
   const [dia, setDia] = useState("")
@@ -43,5 +43,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
